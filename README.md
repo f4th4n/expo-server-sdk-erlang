@@ -44,7 +44,10 @@ AccessToken = "$YourAccessToken",
 
 ```erlang
 %% Get delivery receipts
-Ids = ["XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", "test"],
+Ids = [
+    "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+    "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+],
 AccessToken = "$YourAccessToken",
 expo_server_sdk_push_notification:get_receipts(Ids, AccessToken).
 ```
