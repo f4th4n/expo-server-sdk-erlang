@@ -1,6 +1,6 @@
 {application, expo_server_sdk,
  [{description, "Expo Push Notification API library for Erlang"},
-  {vsn, "0.0.1"},
+  {vsn, "0.0.2"},
   {registered, []},
   {applications,
    [kernel,

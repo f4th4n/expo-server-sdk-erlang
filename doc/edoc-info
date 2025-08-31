@@ -1,0 +1,4 @@
+%% encoding: UTF-8
+{application,expo_server_sdk}.
+{modules,[expo_server_sdk,expo_server_sdk_parser,expo_server_sdk_push_message,
+          expo_server_sdk_push_notification]}.

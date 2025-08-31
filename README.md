@@ -8,7 +8,7 @@ Add `expo_server_sdk` to your rebar.config dependencies:
 
 ```erlang
 {deps, [
-    {expo_server_sdk, "0.0.1"}
+    {expo_server_sdk, "0.0.2"}
 ]}.
 ```
 

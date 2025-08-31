@@ -1,10 +1,4 @@
--module(expo_server_sdk).
--author("Wildan Fathan").
-
--export([]).
-
-%% @doc
-%% ExpoServerSdk is a relatively simple-featured API client for the Exponent Push Notification API.
+%% @doc ExpoServerSdk is a relatively simple-featured API client for the Exponent Push Notification API.
 %%
 %% Take a look at the Resource module `expo_server_sdk_push_notification'.
 %%
@@ -13,3 +7,7 @@
 %% - `expo_server_sdk_parser'
 %% - `expo_server_sdk_push_message'
 %% @end
+-module(expo_server_sdk).
+-author("Wildan Fathan").
+
+-export([]).
