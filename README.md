@@ -16,15 +16,35 @@ Add `expo_server_sdk` to your rebar.config dependencies:
 
 ## Usage
 
-### Single Message
+### Send Single Message
 
 ```erlang
-%% Create a single message map
+Message = #{
+    to => "ExponentPushToken[XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX]",
+    title => "Pushed!",
+    body => "You got your first message"
+},
+AccessToken = "$YourAccessToken", % you can set this nil if it's public
+{ok, Response} = expo_server_sdk_push_notification:push(Message, AccessToken).
+```
+
+### Send Bulk Messages
+
+```erlang
 Message = #{
     to => "ExponentPushToken[XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX]",
     title => "Pushed!",
     body => "You got your first message"
 },
 AccessToken = "$YourAccessToken",
-{ok, Response} = expo_server_sdk_push_notification:push(Message, AccessToken).
+{ok, Response} = expo_server_sdk_push_notification:push_list([Message], AccessToken).
+```
+
+### Get Receipts
+
+```erlang
+%% Get delivery receipts
+Ids = ["XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", "test"],
+AccessToken = "$YourAccessToken",
+expo_server_sdk_push_notification:get_receipts(Ids, AccessToken).
 ```
