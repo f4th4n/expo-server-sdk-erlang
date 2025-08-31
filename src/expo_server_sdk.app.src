@@ -1,0 +1,16 @@
+{application, expo_server_sdk,
+ [{description, "Expo Push Notification API library for Erlang"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    inets,
+    ssl
+   ]},
+  {env,[]},
+  {modules, []},
+  {licenses, ["MIT"]},
+  {maintainers, ["Wildan Fathan"]},
+  {links, [{"Github", "https://github.com/f4th4n/expo-server-sdk-erlang"}]}
+ ]}.
