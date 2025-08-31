@@ -1,5 +1,7 @@
 # ExpoServerSdk (Erlang)
 
+[![Hex.pm](https://img.shields.io/hexpm/v/expo_server_sdk.svg)](https://hex.pm/packages/expo_server_sdk)
+
 An Erlang library for sending push notifications to Expo applications.
 
 ## Installation
